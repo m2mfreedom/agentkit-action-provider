@@ -1,0 +1,66 @@
+{
+  "name": "@m2mfreedom/agentkit-action-provider",
+  "version": "1.1.0",
+  "description": "Official Coinbase AgentKit ActionProvider for M2M Freedom Market (https://m2mfreedom.com) — Gives Base & Solana AI agents 10 HTTP 402 tools: Ultra-Fast LLM Inference (10 Sats / $0.0094 USDC), 5-Sat Semantic Vector Embeddings, 12-in-1 CAPTCHA Solver, Stealth Web Unlocker, Clean Markdown Scraper, Isolated Python 3 Quant Sandbox, Structured Table Extractor, Persistent Memory Vault, Bitcoin Price Oracle, and M2M Task Clearinghouse with automatic Base USDC x402 & L402 settlement.",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:live": "LIVE=1 node --test test/*.test.js"
+  },
+  "keywords": [
+    "coinbase",
+    "agentkit",
+    "coinbase-agentkit",
+    "action-provider",
+    "x402",
+    "l402",
+    "base",
+    "usdc",
+    "solana",
+    "m2m",
+    "a2a",
+    "mcp",
+    "ai-agents",
+    "llm-inference",
+    "captcha-solver",
+    "web-unlocker",
+    "python-sandbox"
+  ],
+  "author": "M2M Market — Freedom Engine <Lordbryce@coinos.io> (https://m2mfreedom.com)",
+  "license": "MIT",
+  "homepage": "https://m2mfreedom.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m2mfreedom/agentkit-action-provider.git"
+  },
+  "peerDependencies": {
+    "@coinbase/agentkit": ">=0.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@coinbase/agentkit": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
